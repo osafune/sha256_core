@@ -1,16 +1,16 @@
-SHA-256 Core
+ï»¿SHA-256 Core
 ====================
 
-SHA-256‚ÌƒnƒbƒVƒ…’l‚ðŒvŽZ‚·‚éVHDLƒ‚ƒWƒ…[ƒ‹‚Å‚·B
+SHA-256ã®ãƒãƒƒã‚·ãƒ¥å€¤ã‚’è¨ˆç®—ã™ã‚‹VHDLãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ã§ã™ã€‚
 
 
-Žg‚¢•û
+ä½¿ã„æ–¹
 ==========
 
-`rtl`ˆÈ‰º‚ÌVHDLƒtƒ@ƒCƒ‹‚ðŠeX‚ÌƒvƒƒWƒFƒNƒg‚É’Ç‰Á‚µ‚Ü‚·BÚ×‚È“®ì‚É‚Â‚¢‚Ä‚Í`testbench`‚ÌƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“Œ‹‰Ê‚ðŽQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+`rtl`ä»¥ä¸‹ã®VHDLãƒ•ã‚¡ã‚¤ãƒ«ã‚’å„ã€…ã®ãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«è¿½åŠ ã—ã¾ã™ã€‚è©³ç´°ãªå‹•ä½œã«ã¤ã„ã¦ã¯`testbench`ã®ã‚·ãƒŸãƒ¥ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³çµæžœã‚’å‚ç…§ã—ã¦ãã ã•ã„ã€‚
 
 
-ƒCƒ“ƒXƒ^ƒ“ƒX
+ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 -----------------------------
 	sha256_inst : sha256_calc port map(
 			reset		=> reset_sig,
@@ -25,31 +25,31 @@ SHA-256‚ÌƒnƒbƒVƒ…’l‚ðŒvŽZ‚·‚éVHDLƒ‚ƒWƒ…[ƒ‹‚Å‚·B
 			hash_valid	=> hash_valid_sig
 		);
 
-### ƒ|[ƒgà–¾ ###
+### ãƒãƒ¼ãƒˆèª¬æ˜Ž ###
 
 `reset`
-”ñ“¯ŠúƒŠƒZƒbƒgB'1'‚ÅƒAƒNƒeƒBƒuB
+éžåŒæœŸãƒªã‚»ãƒƒãƒˆã€‚'1'ã§ã‚¢ã‚¯ãƒ†ã‚£ãƒ–ã€‚
 `clk`
-ƒRƒ“ƒ|[ƒlƒ“ƒg‚Ì“¯ŠúƒNƒƒbƒNB—§‚¿ã‚ª‚èƒGƒbƒW‹ì“®B
+ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆã®åŒæœŸã‚¯ãƒ­ãƒƒã‚¯ã€‚ç«‹ã¡ä¸ŠãŒã‚Šã‚¨ãƒƒã‚¸é§†å‹•ã€‚
 `clk_ena`
-—\–ñB'1'‚ÉŒÅ’èB
+äºˆç´„ã€‚'1'ã«å›ºå®šã€‚
 `init`
-‚PƒNƒƒbƒN•‚Ì'1'‚Å“à•”ƒnƒbƒVƒ…ƒŒƒWƒXƒ^‰Šú‰»BreadyM†‚ªƒAƒT[ƒg‚³‚ê‚Ä‚¢‚éŽž‚Ì‚Ý—LŒøBstartM†‚Æ‚Í”r‘¼‚É‚·‚é‚±‚ÆB
+ï¼‘ã‚¯ãƒ­ãƒƒã‚¯å¹…ã®'1'ã§å†…éƒ¨ãƒãƒƒã‚·ãƒ¥ãƒ¬ã‚¸ã‚¹ã‚¿åˆæœŸåŒ–ã€‚readyä¿¡å·ãŒã‚¢ã‚µãƒ¼ãƒˆã•ã‚Œã¦ã„ã‚‹æ™‚ã®ã¿æœ‰åŠ¹ã€‚startä¿¡å·ã¨ã¯æŽ’ä»–ã«ã™ã‚‹ã“ã¨ã€‚
 `start`
-‚PƒNƒƒbƒN•‚Ì'1'‚Å‰‰ŽZŠJŽnBreadyM†‚ªƒAƒT[ƒg‚³‚ê‚Ä‚¢‚éŽž‚Ì‚Ý—LŒøBinitM†‚Æ‚Í”r‘¼‚É‚·‚é‚±‚ÆB
+ï¼‘ã‚¯ãƒ­ãƒƒã‚¯å¹…ã®'1'ã§æ¼”ç®—é–‹å§‹ã€‚readyä¿¡å·ãŒã‚¢ã‚µãƒ¼ãƒˆã•ã‚Œã¦ã„ã‚‹æ™‚ã®ã¿æœ‰åŠ¹ã€‚initä¿¡å·ã¨ã¯æŽ’ä»–ã«ã™ã‚‹ã“ã¨ã€‚
 `ready`
-“à•”ƒXƒe[ƒgŽ¦´B“à•”ƒXƒe[ƒg‚ªŽó•t‰Â”\ó‘Ô‚ÌŽž‚É'1'‚ð•Ô‚·B
+å†…éƒ¨ã‚¹ãƒ†ãƒ¼ãƒˆç¤ºå”†ã€‚å†…éƒ¨ã‚¹ãƒ†ãƒ¼ãƒˆãŒå—ä»˜å¯èƒ½çŠ¶æ…‹ã®æ™‚ã«'1'ã‚’è¿”ã™ã€‚
 `m_in`
-ƒƒbƒZ[ƒW“ü—Íƒ|[ƒgBM(0)`M(15)‚ð‡‚É“Š“ü‚·‚éBm_in_ack‚ªƒAƒT[ƒg‚³‚ê‚½‚çŽŸ‚ÌƒƒbƒZ[ƒW‚Éi‚ÞB
+ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å…¥åŠ›ãƒãƒ¼ãƒˆã€‚M(0)ï½žM(15)ã‚’é †ã«æŠ•å…¥ã™ã‚‹ã€‚m_in_ackãŒã‚¢ã‚µãƒ¼ãƒˆã•ã‚ŒãŸã‚‰æ¬¡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã«é€²ã‚€ã€‚
 `m_in_ack`
-ƒƒbƒZ[ƒW“ü—ÍƒAƒNƒmƒŠƒbƒWBƒƒbƒZ[ƒW‚ðŽó‚¯•t‚¯‚½‚ç'1'‚ð•Ô‚·B
+ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å…¥åŠ›ã‚¢ã‚¯ãƒŽãƒªãƒƒã‚¸ã€‚ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ã‘ä»˜ã‘ãŸã‚‰'1'ã‚’è¿”ã™ã€‚
 `hash`
-ƒnƒbƒVƒ…’lo—Íƒ|[ƒgBhash_validM†‚ªƒAƒT[ƒgó‘Ô‚ÌŽž‚É—LŒø’l‚ð•Ô‚·BŒvŽZŒ‹‰Ê‚Íready‚ª'0'¨'1'‚É•Ï‰»‚µ‚½ƒ^ƒCƒ~ƒ“ƒO‚ÅXV‚³‚ê‚éB
+ãƒãƒƒã‚·ãƒ¥å€¤å‡ºåŠ›ãƒãƒ¼ãƒˆã€‚hash_validä¿¡å·ãŒã‚¢ã‚µãƒ¼ãƒˆçŠ¶æ…‹ã®æ™‚ã«æœ‰åŠ¹å€¤ã‚’è¿”ã™ã€‚è¨ˆç®—çµæžœã¯readyãŒ'0'â†’'1'ã«å¤‰åŒ–ã—ãŸã‚¿ã‚¤ãƒŸãƒ³ã‚°ã§æ›´æ–°ã•ã‚Œã‚‹ã€‚
 `hash_valid`
-ƒnƒbƒVƒ…’l—LŒøM†Bhash‚ª—LŒø‚Èƒf[ƒ^‚Ìê‡‚É'1'‚ð•Ô‚·B
+ãƒãƒƒã‚·ãƒ¥å€¤æœ‰åŠ¹ä¿¡å·ã€‚hashãŒæœ‰åŠ¹ãªãƒ‡ãƒ¼ã‚¿ã®å ´åˆã«'1'ã‚’è¿”ã™ã€‚
 
 
-ƒ‰ƒCƒZƒ“ƒX
+ãƒ©ã‚¤ã‚»ãƒ³ã‚¹
 =========
 
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
